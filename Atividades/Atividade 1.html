@@ -10,46 +10,103 @@
 <body>
     <h1>Formulário</h1>
 
-    <form action="" method="post">
+    <form action="Funcionario" method="post">
         <fieldset>
             <legend>Funcionário</legend>
             
             <div>
-                <label for="">ID:</label>
-            
-                <label for="">Nome:</label>
+                <label for="txtId">ID:</label>
+                <inpult type="text" name="txtIdName" id="txtId">
+
+                <label for="txtNome">Nome:</label>
+                <input type="text" name="txtNomeName" id="txtNome">
                 
-                <label for="">CPF:</label>
+                <label for="txtCpf">CPF:</label>
+                <input type="number" name="txtCpfName" id="txtCpf">
                 
-                <label for="">E-mail:</label>
+                <label for="txtEmail">E-mail:</label>
+                <input type="email" name="txtEmailName" id="txtEmail">
                 
-                <label for="">Cargo:</label>
+                <label for="txtCargo">Cargo:</label>
+                <input type="text" name="txtCargoName" id="txtCargo">
                 
-                <label for="">Salário:</label>
+                <label for="numSalario">Salário:</label>
+                <input type="number" name="numSalarioName" id="numSalario">
                 
-                <label for="">Data de Admissão:</label>
+                <label for="dateDataAdmissao">Data de Admissão:</label>
+                <input type="date" name="dateDataAdmissaoName" id="dateDataAdmissao">
             </div>
             <div>
-                <input type="button" value="">
-                <input type="button" value="">
-                <input type="button" value="">
-                <input type="button" value="">
-                <input type="button" value="">
-                <input type="button" value="">
-            </div>    
+                <button type="submit">Adicionar</button>
+                <button type="submit">Excluir</button>
+                <button type="submit">Alterar</button>
+                <button type="submit">Pesquisar por ID</button>
+                <button type="submit">Listar Todos</button>
+                <button type="submit">Pesquisar Por Nome</button>
+            </div>
+
         </fieldset>
     </form>
 
-    <form action="" method="post">
+    <form action="Pedido" method="post">
         <fieldset>
             <legend>Pedido</legend>
 
+            <div>
+                <label for="txtId">ID:</label>
+                <input type="text" name="txtIdName" id="txtId">
+                
+                <label for="dateDataPedido">Data Pedido:</label>
+                <input type="date" name="dateDataPedidoName" id="dateDataPedido">
+                
+                <label for="numIdadeFuncionário">Idade do Funcionário:</label>
+                <input type="number" name="numIdadeFuncionárioName" id="numIdadeFuncionário">
+                
+                <label for="txtIdCliente">ID do Cliente:</label>
+                <input type="text" name="txtIdClienteName" id="txtIdCliente">
+                
+                <label for="numValorTotal">Valor Total:</label>
+                <input type="number" name="numValorTotalName" id="numValorTotal">
+            </div>
+            <div>
+                <button type="submit">Registrar Venda</button>
+                <button type="submit">Listar Venda</button>
+            </div>
+
         </fieldset>
     </form>
 
-    <form action="" method="post">
+    <form action="Cliente" method="post">
         <fieldset>
             <legend>Cliente</legend>
+
+            <div>
+                <label for="txtId">ID:</label>
+                <inpult type="text" name="txtIdName" id="txtId">
+
+                <label for="txtNome">Nome:</label>
+                <input type="text" name="txtNomeName" id="txtNome">
+                
+                <label for="txtCpf">CPF/CNPJ:</label>
+                <input type="number" name="txtCpf/CnpjName" id="txtCpf/Cnpj">
+                
+                <label for="txtEmail">E-mail:</label>
+                <input type="email" name="txtEmailName" id="txtEmail">
+                
+                <label for="telCiente">Telefone:</label>
+                <input type="tel" name="telCienteName" id="telCiente">
+                
+                <label for="txtEndereco">Endereço:</label>
+                <input type="text" name="txtEnderecoName" id="txtEndereco">
+            </div>
+            <div>
+                <button type="submit">Adicionar</button>
+                <button type="submit">Excluir</button>
+                <button type="submit">Alterar</button>
+                <button type="submit">Pesquisar por ID</button>
+                <button type="submit">Listar Todos</button>
+                <button type="submit">Pesquisar Por Nome</button>
+            </div> 
 
         </fieldset>
     </form>
@@ -58,12 +115,57 @@
         <fieldset>
             <legend>Item Venda</legend>
 
+            <div>
+                <label for="txtIdProduto">ID do Produto:</label>
+                <input type="text" name="txtIdProdutoName" id="txtIdProduto">
+            
+                <label for="txtIdVenda">ID da Venda:</label>
+                <input type="text" name="txtIdVendaName" id="txtIdVenda">
+            
+                <label for="numQuantidadeProduto">Quantidade do Produto:</label>
+                <input type="number" name="numQuantidadeProdutoName" id="numQuantidadeProduto">
+           
+                <label for="numPrecoUnitario">Preço Unitário:</label>
+                <input type="number" name="numPrecoUnitarioName" id="numPrecoUnitario">
+            </div>
+            <div>
+                <button type="submit">Inserir Item</button>
+                <button type="submit">Excluir Item</button>
+            </div>
+
         </fieldset>
     </form>
 
     <form action="" method="post">
         <fieldset>
             <legend>Produto</legend>
+            <div>
+                <label for="txtId">ID:</label>
+                <inpult type="text" name="txtIdName" id="txtId">
+
+                <label for="txtNome">Nome:</label>
+                <input type="text" name="txtNomeName" id="txtNome">
+                
+                <label for="txtDescricao">Descrição:</label>
+                <input type="text" name="txtDescricaoName" id="txtDescricao">
+
+                <label for="numQuantidadeEstoque">Quantidade em Estoque:</label>
+                <input type="number" name="numQuantidadeEstoqueName" id="numQuantidadeEstoque">
+                
+                <label for="numPrecoUnitario">Preço Unitário:</label>
+                <input type="number" name="numPrecoUnitarioName" id="numPrecoUnitario">
+
+                <img src="" alt="" srcset="">Imagem do Produto
+                
+            </div>
+            <div>
+                <button type="submit">Adicionar</button>
+                <button type="submit">Excluir</button>
+                <button type="submit">Alterar</button>
+                <button type="submit">Pesquisar por ID</button>
+                <button type="submit">Listar Todos</button>
+                <button type="submit">Pesquisar Por Nome</button>
+            </div> 
 
         </fieldset>
     </form>
@@ -72,3 +174,7 @@
 </body>
 
 </html>
+
+
+#ROBOTO
+#San Francisco

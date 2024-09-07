@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exemplo 10 - CSS</title>
+    <style>
+        div{
+            margin: 15px;
+            font-size: 1.2em;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            text-align: justify;
+        }
+        .div1{
+            box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+            border-left: orange solid 5px;
+            color: rgb(35,34,34);
+        }
+        .div2{
+            box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+            border-right: red solid 5px;
+            color: rgb(35,34,34);
+        }
+        h1{
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            font-weight: 900;        
+            color:darkgreen; 
+            text-transform: capitalize;
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <div class="div1">
+            <h1>Exemplo 10 - CSS Formas de Vinculação</h1>
+            <p>
+                Existem três formas básicas de vinculação de arquivos CSS. A vinculação externa,a inline e a incorporada.
+            </p>
+            <p>
+                Neste exemplo usaremos a vinculação incorporada, que é aquela onde as regras CSS são defindas no proprio 
+                documento HTML, geralmente dentro da tag Head e usando a tag style.
+            </p>
+            <p>
+                Esse tipo de vinculação deve ser utilizado quando temos pouquissimas páginas.
+                Sua vantagem é que podemos definir as regras diretamente no documento HTML. Não sendo recomendado a sua utilização
+                quando tivermos mais páginas.
+            </p>
+        </div>
+        <div class="div2">
+            <h2>Vinculação Interna ou Incorporada</h2>
+            <div>
+                <p>
+                    Como dito no paragrafo anterior, a vinculação incorporada é aquela que vem definida dentro da tag style.
+                    E ela deve ficar dentro da tag Head.
+                </p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,26 @@
+div {
+    margin: 15px;
+    font-size: 1.2em;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-align: justify;
+}
+
+.div1 {
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+    border-left: orange solid 5px;
+    color: rgb(35, 34, 34);
+}
+
+.div2 {
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+    border-right: red solid 5px;
+    color: rgb(35, 34, 34);
+}
+
+h1 {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-weight: 900;
+    color: darkgreen;
+    text-transform: capitalize;
+    text-decoration: underline;
+}
