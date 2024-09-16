@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exemplo 18 - CSS</title>
+    <style>
+        body{
+            margin: 20px;
+            font-size: 16px;
+        }
+        .flex-container{
+            display: flex;
+            background-color: skyblue;
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        }
+        .flex-container>div{
+            background-color: rgb(255, 5, 166);
+            color: aliceblue;
+            margin: 10px;
+            padding: 20px;
+            font-size: 2.5rem;
+        }
+        .div1{
+            justify-content: flex-start;
+        }
+        .div2{
+            justify-content: center;
+        }
+        .div3{
+            justify-content: flex-end;
+        }
+        .div4{
+            justify-content: space-between;
+        }
+        .div5{
+            justify-content: space-around;
+        }
+        .div6{
+            justify-content: space-evenly;
+        }
+        .divDirection{
+            /*flex-direction: row;*/
+            /*flex-direction: row-reverse;*/
+            /*flex-direction: column;*/
+            flex-direction: column-reverse;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Flexbox</h1>
+    <div>
+        <p>O flexbox é um modelo de layout em css projetado para facilitar a criação de layouts cpmplexos e flexíveis em
+            uma página web.</p>
+        <p>Ele é muito útil para criar layouts responsivos e alinhar os elementos em uma única dimensão</p>
+        <p>Por exemplo:</p>
+    </div>
+    <h2> justify-content: flex-start</h2>
+    <div class="flex-container div1">
+        <div> 1 </div>
+        <div> 2 </div>
+        <div> 3 </div>
+    </div>
+    <h2> justify-content: center</h2>
+    <div class="flex-container div2">
+        <div> 1 </div>
+        <div> 2 </div>
+        <div> 3 </div>
+    </div>
+    <h2> justify-content: flex-end</h2>
+    <div class="flex-container div3">
+        <div> 1 </div>
+        <div> 2 </div>
+        <div> 3 </div>
+    </div>
+    <h2> justify-content: space-between</h2>
+    <div class="flex-container div4">
+        <div> 1 </div>
+        <div> 2 </div>
+        <div> 3 </div>
+    </div>
+    <h2> justify-content: space-around</h2>
+    <div class="flex-container div5">
+        <div> 1 </div>
+        <div> 2 </div>
+        <div> 3 </div>
+    </div>
+
+    <h2> justify-content: space-evenly</h2>
+    <div class="flex-container div6">
+        <div> 1 </div>
+        <div> 2 </div>
+        <div> 3 </div>
+    </div>
+
+    <h2> Flex-Direction: row, row-reverse, column, column-reverse</h2>
+    <div class="flex-container divDirection">
+        <div> 1 </div>
+        <div> 2 </div>
+        <div> 3 </div>
+    </div>
+</body>
+
+</html>
