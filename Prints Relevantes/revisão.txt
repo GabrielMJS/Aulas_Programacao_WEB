@@ -1,18 +1,22 @@
-primeira questão - conceito e caracteristicas de sistema distrinbuido 
+primeira questão: conceito e caracteristicas de sistema distrinbuido 
 
-segunda questão -  quais são os protocolos fundamentais da internet (TCP /IP)  (O que é HTTP e os "erros" (100 ,200,300,400,500))    
+segunda questão: quais são os protocolos fundamentais da internet (TCP /IP)
 
-questão 3 - como é a anatomia da URL
+terceira questão:o que é o HTTP e seus erros mais conhecidos (100 ,200,300,400,500)
 
-4 questão - principais vertentes  marcação(html) estilização(css) comportamento(js)
+quarta questão: como é a anatomia da URL
 
-questão 5 - duplo diamante (designer things) 
+quinta questão: principais vertentes marcação(html) estilização(css) comportamento(js)
 
-principios de usabilidade de  
+sexta questão: o que é o duplo diamante (designer things) 
+
+principios de usabilidade de (não lembro o nome)
     foco o usuario
     evite memorização
     boas mensagens de erros
     evite erros
+
+
 Tipos de prototipos e ferramentos que usamos para criar-los
     alta fielidade
     baixa fidelidade (papel)
