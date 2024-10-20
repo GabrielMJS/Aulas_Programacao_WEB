@@ -1,0 +1,133 @@
+Exemplo 1
+
+string nome, saudacao;
+//Entrada
+Console.WriteLine("Informe o Seu Nome");
+nome = Console.ReadLine();
+//Processamento
+saudacao = $"Seja bem vindo {nome}";
+//Saída
+Console.WriteLine(saudacao);
+
+
+Exemplo 2
+
+double baseMaior,  baseMenor, altura, areaTrapezio;
+
+
+Console.WriteLine("Diga a Base Maior");
+baseMaior = Convert.ToDouble(Console.ReadLine());
+
+Console.WriteLine("Diga a Base Menor");
+baseMenor = Convert.ToDouble(Console.ReadLine());
+
+Console.WriteLine("Diga a Altura");
+altura = Convert.ToDouble(Console.ReadLine());
+
+
+
+areaTrapezio = (baseMaior + baseMenor) * altura/2;
+
+
+Console.WriteLine($"A área do trapezio que tem bases " +
+    $"{baseMaior} e {baseMenor} e altura {altura} é igual a {areaTrapezio}");
+
+
+Exemplo 3
+
+Int32 idade;
+string resultado;
+
+Console.WriteLine("Informe a idade da Pessoa: ");
+idade = Convert.ToInt32(Console.ReadLine());
+
+if ((idade>0) && (idade < 16))
+{
+    resultado = $"Essa pessoa que tem a idade {idade} não pode votar!";
+}
+else if ((idade > 16) && (idade < 17))
+{
+    resultado = $"Essa pessoa que tem a idade {idade} pode votar, seu voto é facultativo!";
+
+}
+else if ((idade > 17) && (idade <= 60))
+{
+    resultado = $"Essa pessoa que tem a idade {idade} pode votar, seu voto é obrigatório!";
+}
+else
+{
+    resultado = $"Essa pessoa que tem a idade {idade} pode votar, seu voto é facultativo!";
+}
+
+
+Console.WriteLine(resultado);
+
+Exemplo 4
+
+Int32 idade;
+string resultado;
+
+Console.WriteLine("Informe a idade da pessoa");
+idade = Convert.ToInt32(Console.ReadLine());
+
+if (idade > 17)
+{
+    resultado = "Essa pessoa pode dirigir";
+}
+else
+{
+    resultado = "Essa pessoa não pode dirigir";
+}
+
+resultado = (idade > 17) ? "Essa pessoa pode dirigir" : "Essa pessoa não pode dirigir";
+
+
+Console.WriteLine(resultado);
+
+
+
+Exemplo 5
+
+//receba 10 numeros do usuario e armazenar os valorodes divididos em vetores pares e impares e depois mostrar os valores em cada
+
+Int32 numero;
+Int32[] pares = new int[10];
+Int32[] impares = new int[10];
+
+try
+{
+    for (int i = 0; i < 10; i++)
+    {
+        Console.WriteLine($"Digite o {i + 1}º numero: ");
+        numero = Convert.ToInt32(Console.ReadLine());
+
+        if (numero % 2 == 0)
+        {
+            pares[i] = numero;
+        }
+        else
+        {
+            impares[i] = numero;
+        }
+
+    }
+
+    for (int i = 0; i < 10; i++)
+    {
+        if (pares[i] != 0)
+        {
+            Console.WriteLine($"par: {pares[i]}");
+        }
+    }
+    for (int i = 0; i < 10; i++)
+    {
+        if (impares[i] != 0)
+        {
+            Console.WriteLine($"impar: {impares[i]}");
+        }
+    }
+}
+catch (Exception ex)
+{
+    Console.WriteLine("Digite apenas numeros e maiores que zero para saber se eles são pares ou impares");
+}
